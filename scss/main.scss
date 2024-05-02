@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(72, 72, 91);
+    font-family: sans-serif;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;  
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.form{
+    width: 600px;
+    height: 400px;
+    margin: 168px auto;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px 1px white;
+}
+
+.form__title {
+    margin-bottom: 30px;
+    text-align: center;
+    color: rgb(72, 72, 91);
+    font-size: 50px;
+}
+
+.form__text{
+    font-size: 40px;
+    color: rgb(93, 93, 255);
+    cursor: pointer;
+}
+
+.football {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.football__checkbox{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgb(72, 72, 91);
+}
+
+.football__input:checked ~ .football__checkbox{
+    background-image: url(../images/football-img.svg);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: center center;
+}
+
+.basketball {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.basketball__checkbox {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgb(72, 72, 91);
+}
+
+.basketball__input:checked ~ .basketball__checkbox{
+    background-image: url(../images/basketball.svg);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: center center;
+}
+
+.pingpong {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.pingpong__checkbox {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgb(72, 72, 91);
+}
+
+.pingpong__input:checked ~ .pingpong__checkbox{
+    background-image: url(../images/pingpong.svg);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: center center;
+}
+
+.hockey {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    opacity: 0.6;
+}
+.hockey__checkbox {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgb(72, 72, 91);
+}
+
+.hockey__input:checked ~ .hockey__checkbox{
+    background-image: url(../images/hockey.svg);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: center center;
+}
+
+
+.form-btn{
+    width: 150px;
+    margin: 30px 180px;
+    padding: 8px;
+    background-color: rgb(72, 72, 91);
+    border: 2px solid transparent;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover{
+        border: 2px solid rgb(72, 72, 91);
+        color: rgb(72, 72, 91);
+        background-color: #fff;
+        box-shadow: 0 0 5px 1px rgb(72, 72, 91);
+    }
+}
+

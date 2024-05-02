@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title></title>
+</head>
+<body>
+    <form class="form" action="https://echo.htmlacademy.ru" method="post">
+        <h1 class="form__title">Sport Check</h1>
+        <label class="form__label football">  
+            <input name="user_interest" class="football__input visually-hidden" type="checkbox" >
+            <div class="football__checkbox"></div>
+            <p class="football__text form__text">Futbol</p>
+        </label>
+        <label class="form__label basketball">  
+            <input name="user_interest" class="basketball__input visually-hidden" type="checkbox" >
+            <div class="basketball__checkbox"></div>
+            <p class="basketball__text form__text">Basketbol</p>
+        </label>
+        <label class="form__label pingpong">  
+            <input aria-colspan="user_interest" class="pingpong__input visually-hidden" type="checkbox">
+            <div class="pingpong__checkbox"></div>
+            <p class="pingpong__text form__text">Stol tennisi</p>
+        </label>
+        <label class="form__label hockey">  
+            <input name="user_interest" class="hockey__input visually-hidden" type="checkbox" disabled checked>
+            <div class="hockey__checkbox"></div>
+            <p class="hockey__text form__text">Xokkey</p>
+        </label>
+        <button class="form-btn" type="submit">Send</button>
+    </form>
+</body>
+</html>
